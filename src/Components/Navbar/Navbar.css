@@ -1,0 +1,114 @@
+body {
+    background-image: url(..\Frame.png);
+}
+
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    width: 90%; /* Reduced width slightly */
+    max-width: 1400px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Reduced spacing between logo and nav links */
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    margin-right: 10px; /* Reduced spacing between nav links and search box */
+}
+
+.nav-links button {
+    margin: 0 10px; /* Reduced spacing between individual nav buttons */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links button:hover {
+    background-color: #ff7a18;
+    border-radius: 2px;
+}
+
+/* Search Box */
+.search-cart {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Adjust spacing between search box and nav links */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 999px;
+    padding: 5px 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    width: 150px;
+    color: #333;
+}
+
+.search-box .search-btn {
+    background: #ff7a18;
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-box .search-btn .icon {
+    width: 16px;
+    height: 16px;
+    color: #ffffff;
+}
+
+/* Cart Icon */
+.cart-icon {
+    position: relative;
+    margin-left: 10px; /* Adjust spacing between cart icon and search box */
+    cursor: pointer;
+}
+
+.cart-icon .icon {
+    width: 24px;
+    height: 24px;
+    color: #ff7a18;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: #ff7a18;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
